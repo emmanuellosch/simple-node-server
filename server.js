@@ -1,12 +1,13 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const customerController = require("./controller/customer.controller");
+import express from "express";
+import bodyParser from "body-parser";
+
+import customerRoutes from "./routes/customer.routes.js";
+import productRoutes from "./routes/products.routes.js";
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post("/", customerController.customerForm);
-app.get("/", customerController.customerForm);
-
+app.use(customerRoutes);
+app.use(productRoutes);
 app.listen(4000, () => console.log("Server started"));

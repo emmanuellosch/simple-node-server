@@ -1,6 +1,15 @@
+import { v4 as uuidv4 } from "uuid";
+
 function postProduct(request, response) {
-  const { productname, price } = request.body;
-  response.send(`<h1>Product ${productname} with ${price} has been added.`);
+  const newProduct = { ...request.body, id: uuidv4() };
+  response.json({
+    success: true,
+    data: newProduct,
+  });
+}
+
+function getProducts(request, response) {
+  response.json({ products });
 }
 
 function productForm(request, response) {

@@ -1,8 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 function postCustomer(request, response) {
-  const { fName, lName, email } = request.body;
-  response.send(
-    `<h1>Please enter your first name: ${fName}, last name: ${lName} and email: ${email}. Thank you!`
-  );
+  const newCustomer = { ...request.body, id: uuidv4 };
+  response.json(newCustomer);
 }
 
 function customerForm(request, response) {

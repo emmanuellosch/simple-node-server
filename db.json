@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "butter",
+      "price": "50",
+      "id": "3549b5c6-d098-4aae-9927-0e9e9d827a1a"
+    },
+    {
+      "name": "butter",
+      "price": "50",
+      "id": "5507052d-b80b-4f86-b241-b362a374880d"
+    },
+    {
+      "name": "Marmelade",
+      "price": "2,50",
+      "id": "1cd7b13b-6ee1-4bcd-a420-7402f23b34ad"
+    }
+  ],
+  "customers": []
+}

@@ -1,13 +1,13 @@
 import express from "express";
 import {
   postCustomer,
-  customerForm,
+  getCustomers,
 } from "../controller/customer.controller.js";
 
 const router = express.Router();
 
 router.post("/customer", postCustomer);
 
-router.get("/", customerForm);
+router.get("/customer", getCustomers);
 
 export default router;

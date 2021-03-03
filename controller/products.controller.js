@@ -18,11 +18,19 @@ function getProducts(request, response) {
 }
 
 function findProduct(request, response) {
-  const productIDf = request.params.productId;
+  const productId = request.params.productId;
   const database = loadFromDb();
 
-  const targetProduct = products.filter((product) => product.id === product.Id);
-  response.Json(targetProduct);
+  const targetProduct = database.products.find(
+    (product) => product.id === productId
+  );
+  if (targetProduct) {
+    response.json(targetProduct);
+  } else {
+    response.json({
+      message: "Product with Id" + productId + "could not be found.",
+    });
+  }
 }
 
 export { postProduct, getProducts, findProduct };

@@ -26,6 +26,18 @@
       "price": "1,50",
       "onSale": "yes",
       "id": "170c716e-2049-4c2d-9a3e-df6acb4bb97d"
+    },
+    {
+      "name": "Leberkässemmel",
+      "price": "1,80",
+      "onSale": "yes",
+      "id": "186c9ec2-ec90-4738-b8ff-db471a190f04"
+    },
+    {
+      "name": "Fanta",
+      "price": "2,00",
+      "onSale": "yes",
+      "id": "c9695990-d8b3-4676-8135-344bf5e02558"
     }
   ],
   "customers": [

@@ -17,4 +17,12 @@ function getProducts(request, response) {
   response.json({ products: database.products });
 }
 
-export { postProduct, getProducts };
+function findProduct(request, response) {
+  const productIDf = request.params.productId;
+  const database = loadFromDb();
+
+  const targetProduct = products.filter((product) => product.id === product.Id);
+  response.Json(targetProduct);
+}
+
+export { postProduct, getProducts, findProduct };

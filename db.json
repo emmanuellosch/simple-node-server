@@ -28,5 +28,15 @@
       "id": "170c716e-2049-4c2d-9a3e-df6acb4bb97d"
     }
   ],
-  "customers": []
+  "customers": [
+    {
+      "id": "33a9bb3b-90ad-4e42-8f11-4d0038a0bbff"
+    },
+    {
+      "id": "6c34b0bf-fcac-47e2-91e1-b327eea1a276"
+    },
+    {
+      "id": "f4a88829-3bbc-4c0d-ba85-f04c51805043"
+    }
+  ]
 }
